@@ -187,6 +187,275 @@ a {
   margin-bottom: 15px;
 }
 
+
+/* =========================
+   REVIEWS PAGE MAIN SECTION
+========================= */
+.reviews-page {
+  padding: 40px 0;
+}
+
+.restaurant-review {
+  background-color: #f8f8f8;
+  border: 1px solid #d4d4d4;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.review-header h2 {
+  font-size: 2rem;
+  color: #2e97d1;
+}
+
+.review-score {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333333;
+  background-color: #eaf4fb;
+  padding: 8px 14px;
+  border: 1px solid #b9d8ee;
+}
+
+.review-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.review-gallery img {
+  flex: 1 1 calc(25% - 15px);
+  min-width: 220px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid #cccccc;
+  background-color: #dddddd;
+}
+
+.review-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-text p {
+  font-size: 1rem;
+  color: #444444;
+  line-height: 1.8;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 991px) {
+  .restaurant-review {
+    padding: 20px;
+  }
+
+  .review-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .review-gallery img {
+    flex: 1 1 calc(50% - 15px);
+    min-width: 200px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 767px) {
+  .reviews-page {
+    padding: 30px 0;
+  }
+
+  .restaurant-review {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .review-score {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  .review-gallery {
+    flex-direction: column;
+  }
+
+  .review-gallery img {
+    width: 100%;
+    min-width: unset;
+    flex: 1 1 100%;
+  }
+
+  .review-text p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+
+
+/* =========================
+   TOP REVIEWS PAGE
+========================= */
+.top-reviews-page {
+  padding: 40px 0;
+}
+
+/* Page Title */
+.page-title-section {
+  margin-bottom: 40px;
+}
+
+.page-title-section h1 {
+  font-size: 2.5rem;
+  color: #2e97d1;
+  margin-bottom: 10px;
+}
+
+.page-title-section p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* =========================
+   REVIEW CARD
+========================= */
+.top-review-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  background-color: #f8f8f8;
+  border: 1px solid #d4d4d4;
+  padding: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Rank badge */
+.top-review-rank {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  background-color: #2e97d1;
+  color: #ffffff;
+  padding: 5px 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Image */
+.top-review-image {
+  flex: 1 1 300px;
+}
+
+.top-review-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+}
+
+/* Content */
+.top-review-content {
+  flex: 1 1 400px;
+}
+
+.top-review-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.top-review-score {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2e97d1;
+  margin-bottom: 15px;
+}
+
+.top-review-content p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* =========================
+   TABLET (≤ 991px)
+========================= */
+@media (max-width: 991px) {
+  .top-review-card {
+    flex-direction: column;
+  }
+
+  .top-review-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .page-title-section h1 {
+    font-size: 2rem;
+  }
+}
+
+/* =========================
+   MOBILE (≤ 767px)
+========================= */
+@media (max-width: 767px) {
+  .top-reviews-page {
+    padding: 30px 0;
+  }
+
+  .page-title-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .top-review-card {
+    padding: 16px;
+  }
+
+  .top-review-rank {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .top-review-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .top-review-score {
+    font-size: 1rem;
+  }
+
+  .top-review-content p {
+    font-size: 0.95rem;
+  }
+}
+
+
 /* =========================
    FOOTER
 ========================= */
@@ -290,7 +559,7 @@ a {
   }
 
   .project-buttons {
-    flex-direction: column;
+    flex-direction: row;
   }
   
 }
