@@ -1,6 +1,12 @@
 /* =========================
    CSS RESET
 ========================= */
+@font-face {
+  font-family: "Lora-Regular";
+  src: url("fonts/static/Lora-Regular.ttf");
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +17,7 @@
    GENERAL STYLES
 ========================= */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lora-Regular";
   background-color: beige;
   color: #333;
   line-height: 1.6;
@@ -261,6 +267,18 @@ a {
   font-size: 1rem;
   color: #444444;
   line-height: 1.8;
+}
+.top{
+  background-color: #89986D;
+  cursor: pointer;
+  font-size: 25px;
+  border: 1px solid beige;
+  padding: 7px 14px;
+  border-radius: 45px;
+  color: beige;
+  position: fixed;
+  bottom: 10px;
+  right: 10px
 }
 
 /* =========================
